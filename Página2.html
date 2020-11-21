@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países más afectados</title>
+
+
+     <!-- MDB icon -->
+     <link rel="icon" href="materiales/img/icon-pag.ico" type="image/x-icon">
+     <!-- Font Awesome (iconos) -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+     <!-- Google Fonts Roboto (tipo de letra) -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="materiales/css/bootstrap.min.css">
+     <!-- Material Design Bootstrap CSS -->
+     <link rel="stylesheet" href="materiales/css/mdb.min.css">
+     <!-- CSS del sidebar scrollbar-->
+     <link rel="stylesheet" href="materiales/css/jquery.mCustomScrollbar.min.css">
+     <!-- CSS de Animate.css -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+     <!-- Mi css -->
+     <link rel="stylesheet" href="materiales/mis_css/styles-Cristian.css">
+     <!-- MDBootstrap flags -->
+    <link href="css/addons/flag.min.css" rel="stylesheet">
+</head>
+<body>
+    <body>
+        <!-- Comienza tu proyecto aquí-->  
+        
+        <!-- Pantalla de carga 
+        <div class="preloader">
+          <div class="counter">0</div>
+        </div>
+      -->
+        <!-- Navbar -->
+        <nav id="navbar_top" class="navbar navbar-expand navbar-dark scrolling-navbar gris">
+          <div class="container-fluid">
+            <!-- toggle -->
+            <div><a class="open-menu-toggle contenedor-toogle-icon"><i class="fas fa-align-left toogle-menu"></i></a></div> 
+            <!-- Fin del toggle -->  
+              <!-- Sidebar -->
+                <div class="sidebar">
+                  <!-- close sidebar menu -->
+                  <div class="dismiss">
+                    <i class="fas fa-arrow-left color-icon"></i>
+                  </div>
+                  
+                  <div class="logo">
+                    <a href="index.html"></a>
+                  </div>
+                  
+                  <ul class="list-unstyled menu-elements">
+                    <li class="active">
+                      <a class="scroll-link" href="#"><i class="fas fa-home color-icon"></i> Home</a>
+                    </li>
+                    <li>
+                      <a class="scroll-link" href="#"><i class="fas fa-user color-icon"></i> Sobre nosotros</a>
+                    </li>
+                    <li>
+                      <a class="scroll-link" href="#"><i class="fas fa-envelope color-icon"></i> Contáctanos</a>
+                    </li>
+                    <li>
+                      <a class="scroll-link" href="./galeria.html"><i class="fas fa-photo-video color-icon"></i> Galería</a>
+                    </li>
+                    <li>
+                      <a class="scroll-link" href="#"><i class="fas fa-question-circle color-icon"></i> Preguntas frecuentes</a>
+                    </li>
+                    <li>
+                      <a href="#otherSections" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" role="button" aria-controls="otherSections">
+                        <i class="fas fa-sync color-icon"></i>Otras secciones 
+                      </a>
+                      <ul class="collapse list-unstyled" id="otherSections">
+                        <li>
+                          <a class="scroll-link" href="#">En desarrollo...</a>
+                        </li>
+                        <li>
+                          <a class="scroll-link" href="#">En desarrollo...</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <div class="dark-light-buttons">
+                    <a class="btn btn-customized-4 btn-customized-dark" href="#" role="button">Dark</a>
+                    <a class="btn btn-customized-4 btn-customized-light" href="#" role="button">Light</a>
+                  </div>
+                </div>
+              <!-- Fin del sidebar -->
+              <a class="navbar-brand ml-4 d-none d-sm-none d-md-block" href="#">
+                <img src="./materiales/img/erc.png" height="45" alt="mdb logo">
+              </a>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto ml-3 ajustar">
+                  <!-- Desplegable -->
+                  <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">Secciones<i class="fas fa-level-down-alt color-icon quitar-icon-sm"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">En desarrollo...</a>
+                      <a class="dropdown-item" href="#">En desarrollo...</a>
+                      <a class="dropdown-item" href="#">En desarrollo...</a>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="navbar-nav mr-auto quitar-frase">
+                  <li class="nav-item frase">
+                    <span class="frases-typed"></span>
+                  </li>
+                </ul>
+                <ul class="navbar-nav ml-auto ajustar nav-flex-icons">
+                  <li class="nav-item active mr-2">
+                    <a class="nav-link mt-1" href="#">
+                      <i class="far fa-address-card color-icon quitar-icon-sm"></i> Regístrate
+                      <span class="sr-only">(current)</span>
+                    </a>
+                  </li>
+                  <li class="nav-item avatar dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <img src="./materiales/img/user-icon.png" class="rounded-circle z-depth-0 img-usuario"
+                        alt="avatar image">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-secondary"
+                      aria-labelledby="navbarDropdownMenuLink-55">
+                      <a class="dropdown-item" href="#">En desarrollo...</a>
+                      <a class="dropdown-item" href="#">En desarrollo...</a>
+                      <a class="dropdown-item" href="#">En desarrollo...</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!-- Fin del Navbar -->
+       
+        
+        <!-- Dark overlay -->
+          <div class="overlay"></div>
+
+
+<!--------Contenido------------>
+
+
+
+ <h2>Países más afectados por el Hambre</h2>
+        
+<br>
+<br>
+<!----------------------Primera Parte-------------------->
+<div class="card-deck">
+    <div class="card">
+      <img class="card-img-top" src="materiales/img/Somalia.png" >
+      <div class="card-body">
+        <h5 class="card-title">SOMALIA</h5>
+        <p class="card-text">
+            Una nueva hambruna podría afectar a Somalia en 2018. 
+            El pasado verano, la ONU alertaba sobre la crisis que comenzaba a golpear a algunos países de
+            África ante los ojos de los Estados desarrollados que continúan sin aplicar políticas de ayuda efectiva
+            La tasa de desnutrición aguda muestra una situación de emergencia clara: hay más de 1,2 millones de niños en riesgo. 
+            UNICEF alertó el pasado mes de mayo que esta tasa había crecido un 50% con respecto a los análisis anteriores.
+            El miedo a regresar a la situación vivida en 2011 crece cada día.  Las condiciones hace seis años, momento en el que se declaró oficialmente la hambruna, eran muy similares. La respuesta a gran escala tardó y las cifras aumentaron de forma escalofriante. Durante ese año cerca de 260.000 personas murieron de hambre en el Cuerno de África.
+
+
+
+        </p>
+        
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="materiales/img/Comoras.png">
+      <div class="card-body">
+        <h5 class="card-title">COMORAS</h5>
+        <p class="card-text">
+        Con pocos recursos naturales y una población en rápido crecimiento,
+        la isla lucha contra la pobreza y el hambre.
+        Comoras es considerado un país pobre, aunque según el umbral de la pobreza,
+        solamente el 20% de los comorenses puede clasificarse como pobre,
+        por lo que su situación es mejor respecto a otros países en vías de desarrollo, 
+        ya que en este indicador muestra un porcentaje de 30 puntos menos respecto a otros países del África subsahariana. 
+        La pobreza ha disminuido un 10% entre 2014 y 2018, y las condiciones de vida han mejorado.
+        ​ La desigualdad económica sigue siendo elevada,
+        con una mayor diferencia entre las zonas rurales y las urbanas.
+        <br>
+        En 2017 la ONU informó que 7 de cada 10 niños sufre de desnutrición severa, y que solo el 30% de estos mismos 
+        llega a sobrepasar los 15 años de edad, a pesar de la cantidad de enfermedades que dicho tema causa.
+        </p>
+        
+      </div>
+    </div>
+</div>
+<!----------Segunda Parte----------->
+  <div class="card-deck">
+    <div class="card">
+      <img class="card-img-top" src="materiales/img/Burundi.png">
+      <div class="card-body">
+        <h5 class="card-title">BURUNDI</h5>
+        <p class="card-text">
+            Un país pequeño y densamente poblado de África del Este, es el hogar de más de ocho millones de personas. 
+            Alrededor del 90 por ciento vive en zonas rurales.
+            A pesar de las colinas verdes cuidadosamente talladas en parcelas individuales de tierras agrícolas, 
+            el país cuenta con el mayor nivel de hambre entre los 120 países sobre los que se calculó el Índice Global del Hambre 2012. 
+            Cerca del 58%, de todos los niños menores de 5 años sufren desnutrición crónica, 
+            una de las tasas más altas del mundo.
+            El costo socio-económico de la desnutrición crónica en Burundi es enorme. 
+            Burundi es uno de los países más pobres del mundo, cuatro de cada cinco personas viven con menos de 
+            1,25 dólares por día,y el país ocupa el puesto 178 de 187 en el Índice de Desarrollo Humano del PNUD.
+        </p>
+        
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="materiales/img/Haiti.png">
+      <div class="card-body">
+        <h5 class="card-title">HAITI</h5>
+        <p class="card-text">
+        Más de la mitad de la población haitiana total padece inseguridad alimentaria crónica y 
+        el 22 % de los niños sufre desnutrición crónica. 
+        De las 2 100 000 personas afectadas por el huracán Mathew en octubre de 2016, 
+        un millón sigue necesitando ayuda humanitaria.
+        Haití es el país más pobre del hemisferio occidental y retrocede año a año. 
+        Según la FAO, el 80% de su población vive con menos de 2 dólares al día y al menos un 60% tiene serios problemas de desnutrición. 
+        Más de la mitad de la población (entre 5 y 6 millones de personas) vive en áreas rurales y
+        el 85% de ellos se dedica a una agricultura y/o ganadería de subsistencia. 
+        La mayoría de las personas con hambre y desnutrición viven en las zonas rurales y es lógico esperar que 
+        la situación empeore cuando la gran destrucción de casas en la capital, Puerto Príncipe, 
+        desplace a decenas de miles de damnificados a sus pueblos de origen, a refugiarse con sus familiares.
+        </p>
+    
+      </div>
+    </div>
+  </div>
+<!----------Tercera Parte--------->
+<div class="card-deck">
+    <div class="card">
+      <img class="card-img-top" src="materiales/img/Conngo.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">CONGO</h5>
+        <p class="card-text">
+            La persistente violencia en el este de República Democrática del Congo (RDC) 
+            ha dejado más de 5 millones de desplazados internos mientras que 
+            15 millones de personas se enfrentan a inseguridad alimentaria.
+            Uno de cada 10 de los 50 millones de desplazados internos que hay en el mundo se encuentra en RDC, 
+            donde cerca de 1,7 millones de personas abandonaron sus hogares durante 2019 para escapar de la violencia. 
+            Esto lo sitúa como el país que más desplazados registró del continente y el segundo a nivel mundial, tan solo superado por Siria.
+            <br>
+            Casi 16 millones de personas necesitan asistencia humanitaria en 2020, según las estimaciones de la ONU, sin embargo el aumento de los desplazados junto con la falta de fondos están haciendo que las organizaciones humanitarias vean sus capacidades de ayudar reducidas.            
+            Además, unos 3 millones de niños presentan desnutrición aguda.
+        </p>
+ 
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="materiales/img/Madagascar.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">MADAGASCAR</h5>
+        <p class="card-text">En todas partes de la isla la mayoría de la gente vive en condiciones 
+            difíciles. El extremo sur se encuentra en una situación especialmente crítica, no sólo por el coronavirus, 
+            que ha hecho que muchas personas pierdan su trabajo, 
+            sino sobre todo por la sequía que ha sido un gran problema durante años. 
+            La población de esta región siempre ha sufrido de escasez de alimentos, 
+            que se ha visto dramáticamente agravada en los últimos años por el cambio climático. 
+            En los dos últimos años no ha habido temporada de lluvias en esta parte meridional de Madagascar,
+             y los cultivos alimentarios han escaseado, mientras que el ganado, 
+             las cabras y las aves de corral se mueren de hambre.
+              Los habitantes de los matorrales comen botagne 
+            (ceniza y tamarindo) para satisfacer su hambre.</p>
+      </div>
+    </div>
+</div>
+<!-------------------------Cuarta parte------------------------>
+<div class="card-deck">
+    <div class="card">
+      <img class="card-img-top" src="materiales/img/Eritrea.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">ERITREA</h5>
+        <p class="card-text">
+        Dos tercios de la población de Eritrea (4,4 millones) viven de la ayuda internacional contra el hambre.
+        La Onu estima que el 69% de la población de Eritrea vive por debajo de la línea de pobreza, 
+        además el aporte indica que una de cada cuatro personas tiene desnutrición.
+        Expertos aportan que las tasas de desnutrición han aumentado en cuatro de las seis regiones en que se divide el país desde el 2015.
+        23 mil niños de hasta cinco años necesitarían tratamiento contra la desnutrición severa.<br>
+        Eritrea es el país africano con mayor prevalencia de desnutrición infantil, que oscila en más del 60%, más alta aún en comparación con otros países africanos en conflicto.
+    
+        </p>
+ 
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="materiales/img/Chad.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">CHAD</h5>
+        <p class="card-text">
+            La situación con el hambre en Chad la prodríamos resumir en tasa de mortalidad infantil elevada, 
+            desplazamientos de la población, inseguridad alimentaria, enfermedades (cólera y hepatitis E) 
+            y crisis de seguridad. 
+            Por otro lado, el país vive el conflicto regional que azota la cuenca del lago Chad y 
+            sufre los efectos del conflicto en Libia y la República Centroafricana. 
+            Esto produjo un aumento radical del número de desplazados, tanto internos como externos. 
+            Según la encuesta nutricional nacional de 2017, la desnutrición aguda global se eleva al 18,1%.<br> 
+            De tal porcentaje, el 3,4 % corresponde a la forma severa de desnutrición. 
+            Las personas más afectadas son los desplazados internos, los refugiados, 
+            la población indígena de las regiones de acogida y la población que retorna.
+        </p>
+
+      </div>
+    </div>
+</div>
+<!------------------------Quinta parte------------------------>
+<div class="card-deck">
+    <div class="card">
+      <img class="card-img-top" src="materiales/img/Angola.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">ANGOLA</h5>
+        <p class="card-text">Casi dos tercios de los hogares rurales viven con menos de 
+        1,75$ diarios, la mayoría de los 18 millones de angoleños no tiene la certeza de que podrá comer en el día.
+        En un país que ve incrementarse sus fondos gracias a las reservas petroleras, se estima que unos 500.000 niños y niñas sufren desnutrición severa por culpa del colapso en la matriz de generación alimentaria.
+        También tiene uno de los índices de mortalidad infantil más altos del mundo: 20% de los menores muere antes de cumplir los cinco años. La dieta de mala calidad es un factor crucial de esa mortalidad.
+        De acuerdo a la última Encuesta Nacional de Nutrición, llevada a cabo en 2007, casi el 30% de los niños de esa edad padece alguna atrofia, cerca del 16% tiene bajo peso y más de 8% sufre emaciación.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img-top" src="materiales/img/SierraLeona.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">SIERRA LEONA</h5>
+        <p class="card-text">
+            Hoy en día, Sierra Leona continúa siendo extremadamente vulnerable y la crisis del ébola
+            debilitó aún más al país. Junto a la inflación desenfrenada de 2017, 
+            causó un gran impacto en la seguridad alimentaria del país. 
+            La desnutrición crónica continúa siendo un problema, ya que el 31,3% de la población padece retraso en el 
+            crecimiento y el 30 % de los habitantes urbanos presenta sobrepeso.<br>
+            La falta de acceso a servicios básicos representa también un problema: el 28 % de la población carece 
+            de acceso a agua no contaminada y el 80% carece de acceso a letrinas. En agosto de 2017, las inundaciones
+            y los desprendimientos azotaron la capital, provocando al menos 500 muertes y 800 desapariciones.
+        </p>
+ 
+      </div>
+    </div>
+</div>
+
+<!-- boton de ir arriba -->
+<div class="cm-up" id="ir-arriba">
+    <input type="button" class="cm-text-up" value="Subir al Inicio">
+    <span class="cm-icon"><i class="fas fa-chevron-up"></i></span>
+</div>
+
+  <!-- Footer -->
+  <footer class="page-footer font-small unique-color-dark">
+
+    <div class="container-fluid section-social">
+      <div class="container section-social">
+        <div class="row">
+          <a href="#" class="col-3 text-center py-4 d-block hover-icon"><i class="fab fa-whatsapp icon-footer"></i></a>
+          <a href="#" class="col-3 text-center py-4 d-block hover-icon"><i class="fab fa-twitter icon-footer"></i></a>
+          <a href="#" class="col-3 text-center py-4 d-block hover-icon"><i class="fab fa-instagram icon-footer"></i></a>
+          <a href="#" class="col-3 text-center py-4 d-block hover-icon"><i class="fab fa-facebook-square icon-footer"></i></a>
+      
+        </div>
+      </div>
+    </div>
+    
+  
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+  
+      <!-- Grid row -->
+      <div class="row mt-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 ml-auto mb-4">
+  
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">Colegio</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <div>
+            <img src="./materiales/img/cet30.png" alt="C.E.T N°30">
+          </div>
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Tecnologías Utilizadas</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!">MDBootstrap</a>
+          </p>
+          <p>
+            <a href="#!">CSS</a>
+          </p>
+          <p>
+            <a href="#!">JavaScript</a>
+          </p>
+          <p>
+            <a href="#!">HTML</a>
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Enlaces de interés</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!">Regístrese</a>
+          </p>
+          <p>
+            <a href="#!">Deje un comentario</a>
+          </p>
+          <p>
+            <a href="#!">Preguntas frecuentes</a>
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contáctenos</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fas fa-home mr-3"></i>Paraguay 1050, R8324 Cipolletti, Río Negro</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i>cet30.rn@gmail.com</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i>0299 478-3676</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+      © 2020 'ERC' Todos los derechos reservados.
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
+  <!-- Termina tu proyecto aquí-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="materiales/js/jquery.min.js"></script>
+  <!-- Bootstrap popper -->
+  <script type="text/javascript" src="materiales/js/popper.min.js"></script>
+  <!-- Bootstrap JavaScript -->
+  <script type="text/javascript" src="materiales/js/bootstrap.min.js"></script>
+  <!-- Material Design Bootstrap JavaScript -->
+  <script type="text/javascript" src="materiales/js/mdb.min.js"></script>
+  <!-- Js del sidebar scrollbar-->
+  <script type="text/javascript" src="materiales/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <!-- Js de Typed.js -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <!-- Mi js -->
+  <script type="text/javascript" src="materiales/mis_js/scripts-Cristian.js"></script>    
+  <!-- MDBootstrap flags -->
+
+</body>
+</html>
