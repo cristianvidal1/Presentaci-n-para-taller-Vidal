@@ -1,0 +1,51 @@
+
+  html,
+  body,
+  header,
+  .view {
+    height: 100%;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center;
+    background-color: black;
+  }
+
+@media (max-width: 740px) {
+html,
+body,
+header,
+.view {
+height: 1100px;
+}
+}
+@media (min-width: 800px) and (max-width: 850px) {
+html,
+body,
+header,
+.view {
+height: 700px;
+}
+}
+
+.top-nav-collapse {
+background-color: black !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+background: transparent !important;
+}
+
+@media (max-width: 991px) {
+.navbar:not(.top-nav-collapse) {
+background: black !important;
+}
+}
+
+h6 {
+line-height: 1.7;
+}
+
+.btn-indigo{
+    border-radius: 60px;
+    color: black;
+}

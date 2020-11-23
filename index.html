@@ -1,74 +1,77 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <!--Font Awesome-->
-    <script src="https://kit.fontawesome.com/3aef4fa173.js" crossorigin="anonymous"></script>
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="materiales/css/bootstrap.min.css">
+	<title>Página de Cristian sobre taller</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	
+	
+	<!-- Font -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CPoppins:400,500" rel="stylesheet">
+	
+	
+	<link href="./materiales/css/ionicons.css" rel="stylesheet">
+	
+	
+	<link rel="stylesheet" href="./materiales/css/jquery.classycountdown.css"/>
+		
+	<link href="./materiales/css/styles.css" rel="stylesheet">
+	
+    <link href="./materiales/css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+     <!-- Google Fonts Roboto (tipo de letra) -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="materiales/css/bootstrap.min.css">
      <!-- Material Design Bootstrap CSS -->
      <link rel="stylesheet" href="materiales/css/mdb.min.css">
-    <!-- CSS de Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!-- Mi css -->
-    <link rel="stylesheet" href="materiales/mis_css/styles-Cristian.css">
-    <!--Titulo de la páginas-->
-    <title>Presentación Taller</title>
-
-
-
-
+     <!-- CSS del sidebar scrollbar-->
+     <link rel="stylesheet" href="materiales/css/jquery.mCustomScrollbar.min.css">
+     <!-- CSS de Animate.css -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+     <!-- Mi index css -->
+     <link href="./materiales/css/styles.css" rel="stylesheet">
+     <!-- MDBootstrap flags -->
+    <link href="css/addons/flag.min.css" rel="stylesheet">
+	
 </head>
 <body>
-    <h1>Bienvenidos</h1>
-<!--Texto tipeado-->
-    <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-            <div class="col">
-                <a><p>Ir a la página 1</p></a>
-            </div>
-            <div class="col">
-                <a><p>Ir a la página 2</p></a>
-            </div>
-            <div class="col">
-                <a><p>Ir a la página 3</p></a>
-            </div>
-            <div class="col">
-                <a><p>Ir a la página 4</p></a>
-            </div>
-        </div>
-    </div>
-   
-</div>
-<!--Firebase-->
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
-<!--Librerias para los servicios de Firebase (Autenticación y Base de datos)-->
-<script defer src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
-<script defer src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
-<!-- TODO: Add SDKs for Firebase products that you want to use
-https://firebase.google.com/docs/web/setup#available-libraries -->
-
-
-
-
-
-<!-- Bootstrap popper -->
-    <script type="text/javascript" src="materiales/js/popper.min.js"></script>
-<!-- JQuery -->
-    <script type="text/javascript" src="./materiales/js/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-<!-- Js de Typed.js -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-<!-- Bootstrap JavaScript -->
-    <script type="text/javascript" src="./Materiales/Js/bootstrap.min.js"></script>
-<!-- Material Design Bootstrap JavaScript -->
-    <script type="text/javascript" src="./Materiales/Js/mdb.min.js"></script>
-<!--Mi Javascript-->
-<script src="./Materiales/mis_js/scripts-Cristian.js"></script>
-
+	
+	<div class="main-area-wrapper" style="background-image:url(./materiales/img/backgrounds/fondopag.jpg);">
+		<div class="main-area center-text" >
+			
+			<div class="display-table">
+				<div class="display-table-cell">
+					
+					<h1 class="title"><b>Hola! Bienvenido!</b></h1>
+					<p class="desc font-white">El sitio web se encuentra en desarrollo. Gracias por su paciencia.</p>
+					
+					<div id="normal-countdown" data-date="2020/22/11"></div>
+					
+					<a class="notify-btn" href="http://127.0.0.1:5501/P%C3%A1gina1.html"><b>Presione para comenzar</b></a>
+					
+					<ul class="social-btn">
+						<li class="list-heading">Seguinos para mantenerte informado</li>
+						<li><a href="https://www.facebook.com/profile.php?id=100050501734550"><i class="ion-social-facebook"></i></a></li>
+						<li><a href="https://twitter.com/_cristianV8"><i class="ion-social-twitter"></i></a></li>
+						<li><a href="https://www.instagram.com/_cristianv8/"><i class="ion-social-instagram-outline"></i></a></li>
+					</ul>
+					
+				</div><!-- display-table -->
+			</div><!-- display-table-cell -->
+		</div><!-- main-area -->
+	</div><!-- main-area-wrapper -->
+	
+	
+	<!-- SCIPTS -->
+	<!--common-js/jquery-3.1.1.min.js-->
+	<script src="./materiales/js/jquery-3.1.1.min.js"></script>
+	<!--common-js/jquery.countdown.min.js-->
+	<script src="./materiales/js/jquery.countdown.min.js"></script>
+	<!--common-js/scripts.js-->
+	<script src="./materiales/js/scripts.js"></script>
+	
 </body>
 </html>
