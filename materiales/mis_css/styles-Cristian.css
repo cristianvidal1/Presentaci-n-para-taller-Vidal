@@ -5,7 +5,7 @@ body {
     font-weight: 300; 
     color: #888; 
     line-height: 30px; 
-    background: url(../img/backgrounds/degradado.png)  no-repeat center fixed;
+    background: url(../img/backgrounds/naranja.png)  no-repeat center fixed;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -24,7 +24,7 @@ h1{
 }
 h3 
 { 
-    color: #00cafd;
+    color: #fb810f;
     background: rgba(7, 7, 7, 0.541);
     margin: 20px;
     text-align:center;
@@ -34,14 +34,18 @@ h2
 {
     background: #00000071;
     text-align: center;
-    color: #03e9f4;
+    color: #fb810f;
     padding: 10px;
     margin: 20px;
+    border-radius: 5px;
 }
 p{
     color: #fb810f;
     font-size: 20px;
 
+}
+#claseh2{
+    color: #fb810f;
 }
 /*Cartas de Información de bootstrap*/
 .card
@@ -305,7 +309,7 @@ p{
 
 /*-----------------------------------------------------*/
 
-/*-------------------- Contenido ----------------------
+/*-------------------- Contenido ----------------------*/
 
 .content { width: 100%; transition: all 0.3s; }
 
@@ -478,7 +482,7 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
     font-size: 1.3rem;
 }
 /*-----------------------------------------------------------*/
-/*--------Tarjertas de presentación del team----------*
+/*--------Tarjertas de presentación del team----------*/
 .box 
 {
     position: relative;
@@ -592,7 +596,7 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
 
 
 
-/*---------------Efecto 3d h2--------------*
+/*---------------Efecto 3d h2--------------*/
 .leRollFromTop span { animation-name: leRollFromTop }
 @keyframes leRollFromTop {
     from {
@@ -602,8 +606,8 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
 }
 
 
-/*------------Tablas----------*
-/*Texto de introducción*
+/*------------Tablas----------*/
+/*Texto de introducción*/
 .introduccion
 {   
     font-weight: bold;
@@ -613,7 +617,7 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
     color: #f46f03;
 }
 
-/*Tabla en general*
+/*Tabla en general*/
 .table
 {
  
@@ -626,7 +630,7 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
 {
     margin: 5%;
 }
-/*Columnas de la tabla*
+/*Columnas de la tabla*/
 .columna1
 {
     text-align:center;
@@ -666,12 +670,13 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
     height: 70%;
     align-items: center;
 }
-/*Carta de sabías que?....*
+/*Carta de sabías que?....*/
 .deep-orange-lighter-hover 
 {
     color: #ff7043;
     -webkit-transition: .4s;
     transition: .4s; 
+    padding: 5px;
 }
 .deep-orange-lighter-hover:hover 
 {
@@ -683,7 +688,7 @@ h3
 {
     text-align: center;
 }
-/*Carta*
+/*Carta*/
 .card{
     border-radius: 10px;
     background-color: rgb(0, 0, 0);
@@ -692,32 +697,14 @@ h3
 .card:hover{
     -webkit-transform:scale(0.9);
     transform:scale(0.9);
-    transition: 2s;
+    transition: 1s;
 }
 .filas
 {
     text-align: center;
     
 }
-/*Video*
-.video-fluid {
-    margin-top: 10px;
-    width: 100%;
-    height: auto;
-  }
-/*Parrafo del video*
-.parrafovideo
-{
-    color: #fb810f;
-    font-size: 20px;
-    text-align: center;
-    background: black;
-    width: 100%;
-}
-.container-1
-{
-    margin: 20px;
-}
+/*Videos*/
 
 /*------------------Situación del hambre en Argentina----------------------*/
 
