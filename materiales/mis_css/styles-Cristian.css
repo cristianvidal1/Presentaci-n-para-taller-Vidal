@@ -470,8 +470,8 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
 .box 
 {
     position: relative;
-    width:400px;
-    height: 400px;
+    width:500px;
+    height: 500px;
     display: flex; 
     justify-content: center;
     align-items: center;
@@ -481,7 +481,11 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
 }
 .box:hover
 {
-    height: 500px;
+    height: 600px;
+}
+.h2:hover{
+    margin: 10px;
+    padding: 10px;
 }
 .box .imagen-box
 {
@@ -505,6 +509,7 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
 .box:hover .imagen-box img
 {
     opacity: 1;
+
 }
 .box:before{
     content: '';
@@ -526,6 +531,7 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
     background: #fff; 
     z-index: -2;
     filter: blur(40px);
+    
 }
 .box:before,
 .box:after{
@@ -535,6 +541,7 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
 .box:nth-child(2):after
 {
     background: linear-gradient(235deg, #ff005e,#010615,#00bcd4);
+    
 }
 
 .box .contenido-tarjetas
@@ -557,6 +564,7 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
 {
     opacity: 1;
     
+    
 }
 .box .contenido-tarjetas h2
 {
@@ -572,8 +580,22 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
     color: #fff;
     font-weight: 250;
     letter-spacing: 2px;
+    
 }
-
+.glow
+{
+    color: #ff7043;
+    font-weight: bold;
+}
+/*Texto Introducción sobre nosotros*/
+#textodeintroducción{
+    text-align:center;
+    color: #fcff43;
+    background: rgba(14, 13, 13, 0.438);
+    font-size: 30px;
+    margin: 6px;
+    padding: 6px;
+}
 /*---------------Efecto 3d h2--------------*/
 .leRollFromTop span { animation-name: leRollFromTop }
 @keyframes leRollFromTop {
