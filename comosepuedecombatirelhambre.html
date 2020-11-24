@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Como combatir el hambre?</title>
+
+        <!-- MDB icon -->
+        <link rel="icon" href="materiales/img/icon-pag.png" type="image/x-icon">
+        <!-- Font Awesome (iconos) -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <!-- Google Fonts Roboto (tipo de letra) -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="materiales/css/bootstrap.min.css">
+        <!-- Material Design Bootstrap CSS -->
+        <link rel="stylesheet" href="materiales/css/mdb.min.css">
+        <!-- CSS del sidebar scrollbar-->
+        <link rel="stylesheet" href="materiales/css/jquery.mCustomScrollbar.min.css">
+        <!-- CSS de Animate.css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!-- Mi css -->
+        <link rel="stylesheet" href="materiales/mis_css/styles-Cristian.css">
+</head>
+<body>
+     <!-- Navbar -->
+     <nav id="navbar_top" class="navbar navbar-expand navbar-dark scrolling-navbar gris">
+        <div class="container-fluid">
+          <!-- toggle -->
+          <div><a class="open-menu-toggle contenedor-toogle-icon"><i class="fas fa-align-left toogle-menu"></i></a></div> 
+          <!-- Fin del toggle -->  
+            <!-- Sidebar -->
+              <div class="sidebar">
+                <!-- close sidebar menu -->
+                <div class="dismiss">
+                  <i class="fas fa-arrow-left color-icon"></i>
+                </div>
+                
+                <div class="logo">
+                  <a href="index.html"></a>
+                </div>
+                
+                <ul class="list-unstyled menu-elements">
+                  <li class="active">
+                    <a class="scroll-link" href="#"><i class="fas fa-home color-icon"></i> Home</a>
+                  </li>
+                  <li>
+                    <a class="scroll-link" href="#"><i class="fas fa-user color-icon"></i> Sobre nosotros</a>
+                  </li>
+                  <li>
+                    <a class="scroll-link" href="#"><i class="fas fa-envelope color-icon"></i> Contáctanos</a>
+                  </li>
+                  <li>
+                    <a class="scroll-link" href=""><i class="fas fa-photo-video color-icon"></i> Galería</a>
+                  </li>
+                  <li>
+                    <a class="scroll-link" href="#"><i class="fas fa-question-circle color-icon"></i> Preguntas frecuentes</a>
+                  </li>
+                  <li>
+                    <a href="#otherSections" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" role="button" aria-controls="otherSections">
+                      <i class="fas fa-sync color-icon"></i>Otras secciones 
+                    </a>
+                    <ul class="collapse list-unstyled" id="otherSections">
+                      <li>
+                        <a class="scroll-link" href="#">En desarrollo...</a>
+                      </li>
+                      <li>
+                        <a class="scroll-link" href="#">En desarrollo...</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="dark-light-buttons">
+                  <a class="btn btn-customized-4 btn-customized-dark" href="#" role="button">Dark</a>
+                  <a class="btn btn-customized-4 btn-customized-light" href="#" role="button">Light</a>
+                </div>
+              </div>
+            <!-- Fin del sidebar -->
+            <a class="navbar-brand ml-4 d-none d-sm-none d-md-block" href="#">
+              <img src="./materiales/img/logo-sidebar.png" height="65" alt="mdb logo">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto ml-3 ajustar">
+                <!-- Desplegable -->
+                <li class="nav-item dropdown active">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Secciones<i class="fas fa-level-down-alt color-icon quitar-icon-sm"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="Paísesmásafectados.html">Países más afectados por el hambre</a>
+                    <a class="dropdown-item" href="HambreenArgentina.html">El hambre en Argentina</a>
+                    <a class="dropdown-item" href="#">Como se puede combatir el hambre?</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="navbar-nav mr-auto quitar-frase">
+                <li class="nav-item frase">
+                  <span class="frases-typed"></span>
+                </li>
+              </ul>
+              <ul class="navbar-nav ml-auto ajustar nav-flex-icons">
+                <li class="nav-item active mr-2">
+                  <a class="nav-link mt-1" href="#">
+                    <i class="far fa-address-card color-icon quitar-icon-sm"></i> Regístrate
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item avatar dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <img src="./materiales/img/user-icon.png" class="rounded-circle z-depth-0 img-usuario"
+                      alt="avatar image">
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-secondary"
+                    aria-labelledby="navbarDropdownMenuLink-55">
+                    <a class="dropdown-item" href="#">En desarrollo...</a>
+                    <a class="dropdown-item" href="#">En desarrollo...</a>
+                    <a class="dropdown-item" href="#">En desarrollo...</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      <!-- Fin del Navbar -->
+     
+      
+      <!-- Dark overlay -->
+        <div class="overlay"></div>
+      <!--Progress bar-->
+        <div id="progressbar"></div>
+        <div id="scrollpath"></div>
+        <div id="percent"></div>
+        
+        <section>
+  
+        </section>
+
+<!--Inicio del Contenido-->
+<br>
+<h2>¿Cómo podemos combatir este mortal incidente?</h2>
+<br>
+<hr>
+<div class="imagenfondo2">
+    <img src="./materiales/img/backgrounds/combatiendohambre.png" class="img-fluid" alt="Responsive image">
+</div>
+<p class="button type1">Introducción</p>
+<br>
+<br>
+<p class="parrafocombatir">Hoy día, 
+sabemos a ciencia cierta que se puede erradicar el hambre en el mundo. 
+No es una suposición, ni un deseo, sino una realidad. 
+Sin embargo, todavía estamos lejos de cumplir este reto planetario, pues, según la FAO, todavía hay 815 millones de personas que padecen hambre crónica. 
+De estos, 155 millones son menores de cinco años con malnutrición crónica y, 
+los últimos datos que se han podido contrastar hablan de 2.000 millones de personas con carencias de micronutrientes, lo que se conoce como “hambre encubierta”.</p>
+<br>
+<br>
+<br>
+<br>
+<p class="button type3">Pasos para erradicar el hambre</p>
+
+<p class="parrafocombatir">
+    Paso N°1: Superalimentos para cambiar al mundo
+    <br>
+Desde aprovechar el potencial nutritivo y económico de las legumbres 
+(que incluyen micronutrientes, vitamina A, yodo, hierro) 
+fomentando el cultivo local y el consumo de alimentos tradicionales entre los 
+consumidores hasta sacar partido al consumo de bayas, semillas, algas y superalimentos 
+como el jengibre, la granada, la moringa, el aguaymanto o la acerola. 
+Parte del trabajo de salud alimentaria de las ONG y las instituciones es integrar 
+aquellos productos que mejor crecen y más aceptación tienen en las poblaciones, así como priorizar su consumo para algunos segmentos de esta:
+embarazadas, mujeres que amamantan, niños hasta los 3 años…</p>
+<p class="parrafocombatir">
+    Paso N°2: Enseñar el camino hacia el éxito
+    <br>
+    A menudo, la tecnología no tiene sentido si no se da una necesaria curva de aprendizaje. Para erradicar el hambre en el mundo, hay que crear una cultura de autoabastecimiento y mejorar la eficiencia del sector primario en los países en vías de desarrollo.
+</p>
+<p class="parrafocombatir">
+    Paso N°3: Reducir los residuos alimentarios
+    <br>
+    Más allá de una buena cosecha, las técnicas de almacenamiento y conserva son prioritarias en zonas como el sur de África. La implantación de fruta deshidratada en estos países mediante secadores puede ser la diferencia entre comida para varios años o comida para un mes.
+</p>
+<p class="parrafocombatir">
+    Paso N°4: Mejorar la fertilidad del suelo agrícola
+    <br>
+    Incluso en espacios tan fértiles como en buena parte de África es necesario generalizar el uso de abonos y cultivos de cobertura para poder seguir produciendo alimentos. En la actualidad, se empieza a temer por un descenso notable en la producción.
+</p>
+<p class="parrafocombatir">
+    Paso N°5: Comprar productos de comercio justo
+    <br>
+    Aportar a estas comunidades es tan sencillo, a veces, como cambiar de marca de café o comprar textiles en espacios que no contribuyen a la explotación laboral. Luchar contra la erradicación de medidas arancelarias para productos de países en desarrollo, también es una vía para la solidaridad mientras la pobreza no permita la igualdad de oportunidades entre los distintos países.
+</p>
+<p class="parrafocombatir">
+    Paso N°6: Donar a una ONG o hacer un voluntariado
+    <br>
+    La posibilidad de unir el trabajo propio al de miles de manos para combatir un problema global es, probablemente, una de las mejoras formas de invertir nuestro tiempo o la contribución económica que deseemos hacer. En este caso, desde Ayuda en Acción, te recomendamos siempre que analices en qué proyecto y cómo se destina tu aportación.
+</p>
+<p class="parrafocombatir">
+    Paso N°7: Concentrar nuestros mayores esfuerzos en zonas rurales
+    <br>
+    Aunque las ciudades son una vía de entrada de ayudas, la realidad es que las personas pobres y en riesgo de hambre viven, en un 80 % de los casos, en entornos rurales. Por ello, José Graziano da Silva, miembro de la FAO, defendía en Planeta Futuro, del diario El País, lo importante que es seguir luchando por los objetivos de desarrollo sostenible aprobados por la comunidad internacional para impulsar el desarrollo rural, mitigar la migración y reforzar las inversiones en seguridad alimentaria.
+</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p class="button type2">Como conclusión</p>
+<p class="conclusion">En la actualidad, además, debemos adaptar la agricultura al cambio climático —una realidad que parece imparable— para intentar dar a los jóvenes que viven en zonas rurales los medios para un futuro digno de paz y seguridad alimentaria.
+
+    Como has podido comprobar, hay múltiples razones para el optimismo, pero pese a la implicación y los esfuerzos de muchos de nosotros, todavía queda un largo camino hasta erradicar por completo el hambre en el mundo: algo que depende de todos nosotros por igual y que es justo, bueno y necesario para un mejor futuro a lo largo y ancho de nuestro planeta.</p>
+
+
+
+<!-- Fin del contenido -->
+<!-- boton de ir arriba -->
+<div class="cm-up" id="ir-arriba">
+    <input type="button" class="cm-text-up" value="Subir al Inicio">
+    <span class="cm-icon"><i class="fas fa-chevron-up"></i></span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer font-small unique-color-dark">
+
+    <div class="container-fluid section-social">
+      <div class="container section-social">
+        <div class="row">
+          <a href="#" class="col-3 text-center py-4 d-block hover-icon"><i class="fab fa-whatsapp icon-footer"></i></a>
+          <a href="#" class="col-3 text-center py-4 d-block hover-icon"><i class="fab fa-twitter icon-footer"></i></a>
+          <a href="#" class="col-3 text-center py-4 d-block hover-icon"><i class="fab fa-instagram icon-footer"></i></a>
+          <a href="#" class="col-3 text-center py-4 d-block hover-icon"><i class="fab fa-facebook-square icon-footer"></i></a>
+      
+        </div>
+      </div>
+    </div>
+  
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+  
+      <!-- Grid row -->
+      <div class="row mt-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 ml-auto mb-4">
+  
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">Colegio</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <div>
+            <img src="./materiales/img/cet30.png" alt="C.E.T N°30">
+          </div>
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Tecnologías Utilizadas</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!">MDBootstrap</a>
+          </p>
+          <p>
+            <a href="#!">CSS</a>
+          </p>
+          <p>
+            <a href="#!">JavaScript</a>
+          </p>
+          <p>
+            <a href="#!">HTML</a>
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Enlaces de interés</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!">Regístrese</a>
+          </p>
+          <p>
+            <a href="#!">Deje un comentario</a>
+          </p>
+          <p>
+            <a href="#!">Preguntas frecuentes</a>
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contáctenos</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fas fa-home mr-3"></i>Paraguay 1050, R8324 Cipolletti, Río Negro</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i>cet30.rn@gmail.com</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i>0299 478-3676</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+      © 2020 'ERC' Todos los derechos reservados.
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
+  <!-- Termina tu proyecto aquí-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="materiales/js/jquery.min.js"></script>
+  <!-- Bootstrap popper -->
+  <script type="text/javascript" src="materiales/js/popper.min.js"></script>
+  <!-- Bootstrap JavaScript -->
+  <script type="text/javascript" src="materiales/js/bootstrap.min.js"></script>
+  <!-- Material Design Bootstrap JavaScript -->
+  <script type="text/javascript" src="materiales/js/mdb.min.js"></script>
+  <!-- Js del sidebar scrollbar-->
+  <script type="text/javascript" src="materiales/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <!-- Js de Typed.js -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <!-- Mi js -->
+  <script type="text/javascript" src="materiales/mis_js/scripts.js"></script>  
+    
+</body>
+</html>
