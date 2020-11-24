@@ -32,12 +32,14 @@ h3
 }
 h2
 {
-    background: #00000071;
+    background: #0000009a;
     text-align: center;
     color: #fb810f;
     padding: 10px;
     margin: 20px;
     border-radius: 5px;
+    font-size: 40px;
+    font-weight: bold;
 }
 p{
     color: #fb810f;
@@ -47,19 +49,8 @@ p{
 #claseh2{
     color: #fb810f;
 }
-/*Cartas de Información de bootstrap*/
-.card
-{
-    border-radius: 10px;
-    height: 100%;
-    margin: 20px;
-    padding:10px;
-}
-
 
 /*Tabla de Bootstrap*/
-
-
 .table
 {
     height: 100%;
@@ -137,19 +128,24 @@ p{
     Overflow: hidden;
     color: red;
 }
-/*
+
 ::-moz-selection { background: #f35b3f; color: #fff; text-shadow: none; }
 ::selection { background: #f35b3f; color: #fff; text-shadow: none; }
--------------------Navbar--------------------
+/*-------------------Navbar--------------------*/
 .gris{
     background-color: rgba(0, 0, 0, 0.863);
 }
 .top-nav-collapse{
     background-color: rgba(14, 12, 12, 0.89)!important;
 }
----------------------------------------------
+@media(max-width: 540px){
+    .quitar-sm{
+        display: none;
+    }
+}
+/*---------------------------------------------*/
 
------------------- Sidebar ------------------
+/*------------------ Sidebar ------------------*/
 
 .sidebar {
 	width: 275px; height: 100vh; position: fixed; top: 0; left: -290px; z-index: 999; 
@@ -233,7 +229,7 @@ p{
 
 .sidebar .dark-light-buttons { padding: 10px 20px 30px 20px; text-align: center;}
 
-------------------- sidebar light -------------------
+/*------------------- sidebar light -------------------*/
 
 .sidebar.light { background: #fff; color: #888;}
 
@@ -325,7 +321,7 @@ p{
 }
 
 
-/*--------------------- Botones ----------------------
+/*--------------------- Botones ----------------------*/
 
 a.btn-customized-2 {
 	margin-left: 5px; margin-right: 5px; padding: .75rem 1.5rem; 
@@ -394,7 +390,7 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
 }
 /*------------------ Fin de los cuatros botones ----------------------*/
 
-/*---------- boton del usuario ----------
+/*---------- boton del usuario ----------*/
 
 .sidebar ul li.active > a, a[aria-expanded="true"]{
 	background: none;
@@ -405,14 +401,14 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
 
 /*------------------------------------------------------------*/
 
-/*---------------------imagen del usuario---------------------
+/*---------------------imagen del usuario---------------------*/
 .img-usuario{
     width: 35px;
     height: 35px;
 }
 /*------------------------------------------------------------*/
 
-/*-------------------------Toggle menu------------------------
+/*-------------------------Toggle menu------------------------*/
 .toogle-menu{
     width: 13.7px;
     height: 16px;
@@ -430,7 +426,7 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
 }
 /*------------------------------------------------------------*/
 
-/*---------------------color de los iconos--------------------*
+/*---------------------color de los iconos--------------------*/
 .color-icon{
     color: #f46f03;
     
@@ -443,7 +439,7 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
 }
 /*-----------------------------------------------------------*/
 
-/*---------------------Ajuste del navbar---------------------*
+/*---------------------Ajuste del navbar---------------------*/
 @media(max-width: 540px){
     .quitar-icon-sm{
         display: none;
@@ -454,20 +450,8 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
         display: none;
     }
 }
-/*-----------------------------------------------------------*/
 
-/*---------------------------Frases--------------------------*
-.frase{
-    font-style: italic;
-    font-weight: 500;
-    color:#03e9f4;
-}
-
-/*-----------------------------------------------------------*/
-/*-------------------- Pantalla de carga --------------------*/
-
-/*-----------------------------------------------------------*/
-/*------------------------ Footer ---------------------------*
+/*------------------------ Footer ---------------------------*/
 .section-social{
     background-color: #f46f03;
 }
@@ -590,12 +574,6 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
     letter-spacing: 2px;
 }
 
-
-  
-
-
-
-
 /*---------------Efecto 3d h2--------------*/
 .leRollFromTop span { animation-name: leRollFromTop }
 @keyframes leRollFromTop {
@@ -604,7 +582,6 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
         opacity: 0
     }
 }
-
 
 /*------------Tablas----------*/
 /*Texto de introducción*/
@@ -665,11 +642,7 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
     transition: .4s;
     color: #d9d9d9; 
 }
-.card-body
-{   
-    height: 70%;
-    align-items: center;
-}
+
 /*Carta de sabías que?....*/
 .deep-orange-lighter-hover 
 {
@@ -688,7 +661,7 @@ h3
 {
     text-align: center;
 }
-/*Carta*/
+/*-------------------Carta de Países mas afectados----------------------*/
 .card{
     border-radius: 10px;
     background-color: rgb(0, 0, 0);
@@ -697,33 +670,38 @@ h3
 .card:hover{
     -webkit-transform:scale(0.9);
     transform:scale(0.9);
-    transition: 1s;
+    transition: 2s;
 }
 .filas
 {
     text-align: center;
     
 }
-/*Videos*/
-
-/*------------------Situación del hambre en Argentina----------------------*/
-
-
-
-
-  /*Carta con información*
-.fondocarta
+.textocarta
 {
-    background-color: rgba(0, 0, 0, 0.897);
+    color: #f46f03;
+    margin: 5px;
 }
-.fondocarta h4
-  {
-    color: #f46f03;
-    padding: 10px;
-  }
-#colorp 
+
+.titulocarta
 {
     color: #f46f03;
-    font-size: 0.96rem;
-    margin: 10px;
+    text-align: center;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.bodycarta
+{
+    margin: 5px;
+}
+.card-deck
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+.card-img-top
+{
+    width: 100%;
 }
