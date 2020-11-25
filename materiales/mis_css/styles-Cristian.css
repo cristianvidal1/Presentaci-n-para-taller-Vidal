@@ -49,6 +49,10 @@ p{
 #claseh2{
     color: #fb810f;
 }
+/*----------Titulo de la página en Construcción--------------*/
+
+
+
 
 /*Tabla de Bootstrap*/
 .table
@@ -143,7 +147,7 @@ p{
         display: none;
     }
 }
-/*---------------------------------------------*/
+
 
 /*------------------ Sidebar ------------------*/
 
@@ -154,7 +158,6 @@ p{
 }
 
 .sidebar.active { left: 0; }
-
 .dismiss {
     width: 35px; 
     height: 35px; 
@@ -168,7 +171,6 @@ p{
     line-height: 35px; 
     cursor: pointer;
 }
-
 .dismiss:hover, .dismiss:focus { background: #555; color: #fff; }
 
 .sidebar .logo 
@@ -177,7 +179,6 @@ p{
     text-align: center; 
     border-bottom: 1px solid #444; 
     transition: all .3s; }
-
 .sidebar .logo a {
 	display: inline-block;
 	width: 20rem;
@@ -216,7 +217,6 @@ p{
 .sidebar a[data-toggle="collapse"] {
     position: relative;
 }
-
 .sidebar .dropdown-toggle::after {
     display: block;
     position: absolute;
@@ -232,23 +232,16 @@ p{
 /*------------------- sidebar light -------------------*/
 
 .sidebar.light { background: #fff; color: #888;}
-
 .sidebar.light .dismiss { background: #ddd; color: #888;}
-
 .sidebar.light .dismiss:hover, 
 .sidebar.light .dismiss:focus { background: #ccc; color: #888;}
-
 .sidebar.light .logo {border-bottom: 1px solid #eee;}
-
 .sidebar.light ul.menu-elements { border-color: #eee;}
-
 .sidebar.light ul li a { color: #888;}
-
 .sidebar.light ul li a:hover,
 .sidebar.light ul li a:focus,
 .sidebar.light ul li.active > a:hover,
 .sidebar.light ul li.active > a:focus { background: #ccc; color: #888;}
-
 .sidebar.light ul li.active > a, .sidebar.light a[aria-expanded="true"]{
 	background: #ddd;
 	color: #888;
@@ -272,7 +265,6 @@ p{
 
 .sidebar.light a.btn-customized-4.btn-customized-dark { background: #555; }
 .sidebar.light a.btn-customized-4.btn-customized-light { background: #eee; }
-
 .sidebar.light a.btn-customized-4.btn-customized-dark:hover, 
 .sidebar.light a.btn-customized-4.btn-customized-dark:active, 
 .sidebar.light a.btn-customized-4.btn-customized-dark:focus, 
@@ -282,7 +274,6 @@ p{
 .sidebar.light a.btn-customized-4.btn-customized-dark.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
 	background: #ccc; color: #fff;
 }
-
 .sidebar.light a.btn-customized-4.btn-customized-light:hover, 
 .sidebar.light a.btn-customized-4.btn-customized-light:active, 
 .sidebar.light a.btn-customized-4.btn-customized-light:focus, 
@@ -319,8 +310,6 @@ p{
 .open-menu-toggle.btn-customized.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
 	box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.2);
 }
-
-
 /*--------------------- Botones ----------------------*/
 
 a.btn-customized-2 {
@@ -344,7 +333,6 @@ a.btn-customized-3 {
 	background: #444; border: 0; border-radius: 4px; 
 	font-size: 16px; font-weight: 300; color: #fff; box-shadow: none;
 }
-
 a.btn-customized-3:hover, 
 a.btn-customized-3:active, 
 a.btn-customized-3:focus, 
@@ -354,7 +342,6 @@ a.btn-customized-3.btn.btn-primary:not(:disabled):not(.disabled):active,
 a.btn-customized-3.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
 	outline: 0; background: #555; border: 0; color: #fff; box-shadow: none;
 }
-
 a.btn-customized i, 
 a.btn-customized-2 i,
 a.btn-customized-3 i { margin-right: 5px; }
@@ -368,7 +355,6 @@ a.btn-customized-4 {
 
 a.btn-customized-4.btn-customized-dark { background: #222; }
 a.btn-customized-4.btn-customized-light { background: #fff; }
-
 a.btn-customized-4.btn-customized-dark:hover, 
 a.btn-customized-4.btn-customized-dark:active, 
 a.btn-customized-4.btn-customized-dark:focus, 
@@ -378,7 +364,6 @@ a.btn-customized-4.btn-customized-dark.btn.btn-primary:not(:disabled):not(.disab
 a.btn-customized-4.btn-customized-dark.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
 	outline: 0; background: #555; border: 0; color: #fff; box-shadow: none;
 }
-
 a.btn-customized-4.btn-customized-light:hover, 
 a.btn-customized-4.btn-customized-light:active, 
 a.btn-customized-4.btn-customized-light:focus, 
@@ -395,10 +380,6 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
 .sidebar ul li.active > a, a[aria-expanded="true"]{
 	background: none;
 }
-/*---------------------------------------*/
-
-
-
 /*------------------------------------------------------------*/
 
 /*---------------------imagen del usuario---------------------*/
@@ -450,7 +431,6 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
         display: none;
     }
 }
-
 /*------------------------ Footer ---------------------------*/
 .section-social{
     background-color: #f46f03;
@@ -496,15 +476,12 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
     height: 100%;
     padding: 10px;
     box-sizing: border-box;
-
 }
 .box .imagen-box img
 {
     max-width: 100%;
     opacity: 0.1;
     transition: 0.5s;
-
-
 }
 .box:hover .imagen-box img
 {
@@ -841,5 +818,4 @@ border-radius:2px}
     background: #c368137e;
     color: black; 
     border-radius: 10px;
-    
 }
