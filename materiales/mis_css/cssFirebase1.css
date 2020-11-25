@@ -1,0 +1,14 @@
+h1 {
+    margin: 20px;
+    color: #fb810f;
+    font-size: bold;
+    border: 2px solid;
+    text-align: center; 
+    background: #0000009b;
+    border-radius: 10px;
+    padding: 10px;
+}
+.botonInput{
+    text-align: center;
+    
+}
