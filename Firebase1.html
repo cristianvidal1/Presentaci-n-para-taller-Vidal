@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regístrate</title>
+</head>
+<body>
+    <!--Para registrarse-->
+    <h1>Área para registrarse</h1>
+    <input type="email" id="email" placeholder="Ingresa acá tu email :D">
+    <input type="password" id="password" placeholder="Ingresa acá tu contraseña :D">
+    <button onclick="enviar()">Enviar</button>
+
+    <!--Para loguearse-->
+    <h1>Área para acceder a tu cuenta</h1>
+    <input type="email" id="email" placeholder="Ingresa acá tu email :D">
+    <input type="password" id="password" placeholder="Ingresa acá tu contraseña :D">
+    <button onclick="acceder()">Entrar</button>
+
+    <!-- Firebase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-auth.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-analytics.js"></script>
+
+    <script>
+      /*-- Firebase --*/
+      //Configuración de Firebase
+      var firebaseConfig = {
+        apiKey: "AIzaSyC5rmBGy994oV65HU_ATOWXDzlIOwjflmc",
+        authDomain: "usuarios-d9876.firebaseapp.com",
+        databaseURL: "https://usuarios-d9876.firebaseio.com",
+        projectId: "usuarios-d9876",
+        storageBucket: "usuarios-d9876.appspot.com",
+        messagingSenderId: "909594657448",
+        appId: "1:909594657448:web:074acd981bee54c28a389d",
+        measurementId: "G-D5WYNKX377",
+      };
+      // Iniciar Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+
+      firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+          //El usuario ya inició sesión
+          var displayName = user.displayName;
+          var email = user.email;
+          var emailVerified = user.emailVerified;
+          let textoVerificado = "";
+          if (emailVerified === false) {
+            textoVerificado = " Tu Email no está verificado";
+          } else {
+            textoVerificado = "Tu Email está verificado";
+          }
+          var photoURL = user.photoURL;
+          var isAnonymous = user.isAnonymous;
+          var uid = user.uid;
+          var providerData = user.providerData;
+
+          document.getElementById("login").innerHTML =
+            `<p> Logueado ` +
+            user.email +
+            ` ` +
+            textoVerificado +
+            `</p> <button onclick="cerrarSesion()">Cerrar sesion</button>`;
+          console.log(user);
+        } else {
+          // El usuario se encuentra desconectado.
+          document.getElementById("login").innerHTML = "No te logueaste :/ ";
+        }
+      });
+
+
+
+
+      /*PARA REGUSTRAR AL USUARIO*/
+
+      function enviar() {
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+
+        firebase
+        .auth()
+        .createUserWithEmailAndPassword(email, password)
+        .catch(function(error){
+            //variable error
+            var errorCode= error.Code;
+            //variable error de mensaje
+            var errorMensaje= error.Mensaje;
+        })
+        then(function(){//Se verifica el mail ingresado del usuario
+            verificar();
+        });
+      }
+
+      //Para verificar al usuario vía correo electrónico/Mail
+      function verificar(){
+          var usuario= firebase.auth().currentUser;
+          usuario
+          //enviar verificación de usuario 
+          .sendEmailVerification()
+          .then(function(){
+              //Email ya enviado
+          })
+          .catch(function(){
+              //Ocurrió un error
+          });
+      }
+      
+
+
+
+    /*Botón para que el usuario se pueda loguear*/
+      function acceso(){
+          let email1= document.getElementById("email1").value;
+          let password1= document.getElementById("password1").value;
+          //Lo siguiente autentica usuarios que ya existen
+          firebase
+            .auth()
+            .signInWithEmailAndPassword(email1, password1)
+            .catch(function(error) {
+            //manejo de errores aquí
+            var codigoError= codigoError;
+            var mensajeError= mensajeError;
+            //Mensaje de error por consola
+            console.log(mensajeError);
+          });
+        }
+        
+    /*Botón para cerrar la sesión del usuario*/
+    function cerrarSesion(){
+        firebase
+        .auth()
+        .signOut()
+        .then(function() {
+            console.log("Salir");
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+    }
+    
+
+    /*------------------------*/
+    //Fin de nuestro Firebase
+    </script>
+</body>
+</html>
