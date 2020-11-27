@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción al Hambre</title>
+
+
+    <!--  icono de la página -->
+    <link rel="icon" href="materiales/img/icon-pag.png" type="image/x-icon">
+    <!-- Font Awesome (iconos) -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto (tipo de letra) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="materiales/css/bootstrap.min.css">
+    <!-- Material Design Bootstrap CSS -->
+    <link rel="stylesheet" href="materiales/css/mdb.min.css">  
+    <!-- CSS del sidebar scrollbar-->
+    <link rel="stylesheet" href="materiales/css/jquery.mCustomScrollbar.min.css">
+    <!-- CSS de Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Mi css -->
+    <link rel="stylesheet" href="materiales/mis_css/styles-Cristian.css">
+    <!-- MDBootstrap flags -->
+   <link href="css/addons/flag.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar_top" class="navbar navbar-expand navbar-dark scrolling-navbar gris">
+        <div class="container-fluid">
+          <!-- toggle -->
+          <div><a class="open-menu-toggle contenedor-toogle-icon"><i class="fas fa-align-left toogle-menu"></i></a></div> 
+          <!-- Fin del toggle -->  
+            <!-- Sidebar -->
+              <div class="sidebar">
+                <!-- close sidebar menu -->
+                <div class="dismiss">
+                  <i class="fas fa-arrow-left color-icon"></i>
+                </div>
+                
+                <div class="logo">
+                  <img src="./materiales/img/cv.png" height="65" alt="mdb logo">
+                </div>
+                
+                <ul class="list-unstyled menu-elements">
+                  <li class="active">
+                    <a class="scroll-link" href="./Firebase1.html"><i class="fas fa-home color-icon"></i> Home</a>
+                  </li>
+                  <li>
+                    <a class="scroll-link" href="./SobreNosotros.html"><i class="fas fa-user color-icon"></i> Sobre Mí</a>
+                  </li>
+                  <li>
+                    <a class="scroll-link" href="#"><i class="fas fa-envelope color-icon"></i> Contáctanos</a>
+                  </li>
+                  <li>
+                    <a href="#otherSections" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" role="button" aria-controls="otherSections">
+                      <i class="fas fa-sync color-icon"></i>Otras secciones 
+                    </a>
+                    <ul class="collapse list-unstyled" id="otherSections">
+                      <li>
+                        <a class="scroll-link" href="./Paísesmásafectados.html">Países más afectados</a>
+                      </li>
+                      <li>
+                        <a class="scroll-link" href="./SobreNosotros.html">Sobre nosotros</a>
+                      </li>
+                      <li>
+                        <a class="scroll-link" href="./comosepuedecombatirelhambre.html">Como combatir el Hambre?</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="dark-light-buttons">
+                  <a class="btn btn-customized-4 btn-customized-dark" href="#" role="button">Dark</a>
+                  <a class="btn btn-customized-4 btn-customized-light" href="#" role="button">Light</a>
+                </div>
+              </div>
+            <!-- Fin del sidebar -->
+            <a class="navbar-brand ml-4 d-none d-sm-none d-md-block">
+              <img src="./materiales/img/cv.png" height="65" alt="mdb logo">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto ml-3 ajustar">
+              
+               <!-----------------------> 
+              </ul>
+              <ul class="navbar-nav mr-auto quitar-frase">
+                <li class="nav-item frase">
+                  <span class="frases-typed"></span>
+                </li>
+              </ul>
+              <ul class="navbar-nav ml-auto ajustar nav-flex-icons">
+                <li class="nav-item active mr-2">
+                  <a class="nav-link mt-1" href="./Firebase1.html">
+                    <i class="far fa-address-card color-icon quitar-icon-sm"></i> Regístrate
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item avatar dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <img src="./materiales/img/user-icon.png" class="rounded-circle z-depth-0 img-usuario"
+                      alt="avatar image">
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-secondary"
+                    aria-labelledby="navbarDropdownMenuLink-55">
+                    <a class="dropdown-item" href="/Firebase1.html">Loguearse (En caso de tener cuenta).</a>
+
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      <!-- Fin del Navbar -->
+      <h2 class="cssanimation leRollFromTop sequence" id="claseh2">Introducción sobre el Hambre</h2>
+      <br>
+      <br>
+      <br>
+      <p class="button type1">Definición</p>
+      <br>
+        <div class="container-fluid">
+            <div class="row ">
+                <p  id="introhambre" class="text-justify text-wrap" style="width: 20rem ; margin-left: 20px;">
+                El hambre es una sensación física incómoda o dolorosa, causada por un consumo insuficiente de energía alimentaria. Se vuelve crónica cuando la persona no consume una cantidad suficiente de calorías (energía alimentaria) de forma regular para llevar una vida normal, activa y saludable.<br>
+                Hoy en día, se estima que casi 690 millones de personas pasan hambre. Durante décadas, la FAO ha utilizado el indicador de prevalencia de la subalimentación para estimar el alcance del hambre en el mundo, por lo que el término “hambre” también suele denominarse subalimentación.
+                </p>
+                <img src="./materiales/img/introhambre2.png" alt="thumbnail" class="img-thumbnail" style="width: 900px;">
+                
+                
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <p  id="introhambre" class="text-justify text-wrap" style="width: 20rem ; margin-left: 20px;">
+                    ¿Qué es la inseguridad alimentaria?<br>
+                    Una persona padece inseguridad alimentaria cuando carece de acceso regular a suficientes alimentos inocuos y nutritivos para un crecimiento y desarrollo normales y para llevar una vida activa y saludable. Esto puede deberse a la falta de disponibilidad de alimentos y/o a la falta de recursos para obtenerlos. La inseguridad alimentaria puede experimentarse a diferentes niveles de severidad.
+                </p>
+                <img src="./materiales/img/introduccionhambre.png" alt="thumbnail" class="img-thumbnail"
+                style="width: 900px">
+            </div>
+        </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+            <!-- boton de ir arriba -->
+<div class="cm-up" id="ir-arriba">
+    <input type="button" class="cm-text-up" value="Subir al Inicio">
+    <span class="cm-icon"><i class="fas fa-chevron-up"></i></span>
+</div>
+
+  <!-- Footer -->
+  <footer class="page-footer font-small unique-color-dark">
+
+    <div class="container-fluid section-social">
+      <div class="container section-social">
+        <div class="row">
+          
+        </div>
+      </div>
+    </div>
+    
+  
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+  
+      <!-- Grid row -->
+      <div class="row mt-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 ml-auto mb-4">
+  
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">Colegio</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <div>
+            <img src="./materiales/img/cet30.png" alt="C.E.T N°30">
+          </div>
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Tecnologías Usadas</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="https://getbootstrap.com/">Bootstrap</a>
+          </p>
+          <p>
+            <a href="https://mdbootstrap.com/">MDBootstrap</a>
+          </p>
+          <p>
+            <a href="#!">CSS</a>
+          </p>
+          <p>
+            <a href="#!">JavaScript</a>
+          </p>
+          <p>
+            <a href="#!">HTML</a>
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Enlaces de interés</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="./Firebase1.html">Regístrese</a>
+          </p>
+          <p>
+            
+          </p>
+          <p>
+            
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contáctenos</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
+          <p>
+            <i class="fas fa-home mr-3"></i>Paraguay 1050, R8324 Cipolletti, Río Negro</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i>cet30.rn@gmail.com</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i>0299 478-3676</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+      © 2020 'C V' Todos los derechos reservados.
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
+  <!-- Termina tu proyecto aquí-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="materiales/js/jquery.min.js"></script>
+  <!-- Bootstrap popper -->
+  <script type="text/javascript" src="materiales/js/popper.min.js"></script>
+  <!-- Bootstrap popover-->
+  <!-- Bootstrap JavaScript -->
+  <script type="text/javascript" src="materiales/js/bootstrap.min.js"></script>
+  <!-- Material Design Bootstrap JavaScript -->
+  <script type="text/javascript" src="materiales/js/mdb.min.js"></script>
+  <!-- Js del sidebar scrollbar-->
+  <script type="text/javascript" src="materiales/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <!-- Js de Typed.js -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <!-- Mi js -->
+  <script type="text/javascript" src="materiales/mis_js/scripts-Cristian.js"></script>    
+  <!--Css animation-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script> 
+  <script type="text/javascript" src="materiales/js/cssanimation-gsap.min.js"></script>
+
+</body>
+</html>
