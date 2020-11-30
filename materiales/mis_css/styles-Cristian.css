@@ -829,3 +829,42 @@ border-radius:2px}
     padding: 20px;
     border-radius: 5px ;
 }
+/*Enfermedad 1*/
+#sindrome1
+{
+     background: rgba(2, 2, 2, 0.63);
+     padding: 20px;
+     border: solid 3px;
+}
+#sindrome2
+{
+    background: rgba(2, 2, 2, 0.63);
+     padding: 20px;
+     border: solid 3px;
+}
+#sindrome3
+{
+    background: rgba(2, 2, 2, 0.63);
+    padding: 20px;
+    border: solid 3px;
+    max-width: 500px;
+}
+#sindrome4
+{
+    background: rgba(2, 2, 2, 0.63);
+    padding: 20px;
+    border: solid 3px;
+    max-width: 500px;
+}
+#sindrome5{
+    background: rgba(2, 2, 2, 0.63);
+    padding: 20px;
+    border: solid 3px;
+    max-width: 500px;
+}
+#sindrome6{
+    background: rgba(2, 2, 2, 0.63);
+    padding: 20px;
+    border: solid 3px;
+    max-width: 500px;
+}
